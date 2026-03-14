@@ -1,0 +1,30 @@
+## Update system
+
+sudo apt update
+sudo apt upgrade -y
+
+## Install Apache
+
+sudo apt install apache2
+
+## Install MySQL
+
+sudo apt install mysql-server
+
+## Install PHP modules
+
+sudo apt install php php-mysql php-gd php-json php-curl php-mbstring php-intl php-xml php-zip
+
+## Download Nextcloud
+
+cd /var/www
+wget https://download.nextcloud.com/server/releases/latest.zip
+unzip latest.zip
+
+## Set permissions
+
+sudo chown -R www-data:www-data /var/www/html/nextcloud
+
+## Restart Apache
+
+sudo systemctl restart ap
