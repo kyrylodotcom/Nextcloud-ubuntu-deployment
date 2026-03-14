@@ -1,0 +1,4 @@
+Run the script:
+
+chmod +x scripts/install.sh
+./scripts/install.sh
