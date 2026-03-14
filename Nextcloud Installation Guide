@@ -25,6 +25,19 @@ unzip latest.zip
 
 sudo chown -R www-data:www-data /var/www/html/nextcloud
 
+
 ## Restart Apache
 
 sudo systemctl restart ap
+
+## Automated installation
+
+Run the script:
+
+chmod +x install.sh
+./install.sh
+
+
+
+
+
